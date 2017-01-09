@@ -77,6 +77,7 @@ Player* gameWinnerPlayer;
 
 int buzzerPin = 45;
 
+char *gameName="Foosball Table";
 
 void setup()
 {
@@ -92,7 +93,8 @@ void setup()
   showAnimatedStartup();
   
   pinMode(buzzerPin, OUTPUT);
-  Serial.print("TCMS Foosball v");
+  Serial.print(gameName);
+  Serial.print(" v");
   Serial.println(VERSION);
   goal1.label = "Goal1";
   goal2.label= "Goal2";
@@ -152,7 +154,8 @@ void showStartScreen() {
   Serial.println("Showing start screen");
   lcd.clear();                 
   lcd.setCursor(0,0);          
-  lcd.print("Foosball Table v");
+  lcd.print(gameName);
+  lcd.print(" v");
   lcd.print(VERSION); 
   lcd.setCursor(2,1);          
   lcd.print("Select Game Type");

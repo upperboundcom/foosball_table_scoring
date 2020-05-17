@@ -1,4 +1,4 @@
-This Arduino code implements a foosball table scoring system. It can actually be used with any two-player table-top game that point scoring with two goals.
+This Arduino code implements a foosball table scoring system. It can actually be used with any two-player table-top game that uses point scoring with two goals.
 
 Game options include best two out of three or best three out of five.
 
